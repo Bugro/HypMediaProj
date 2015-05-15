@@ -8,6 +8,20 @@ body {
     color: #b4ff00;
 }
 
+.title-text a:link,
+.title-text a:visited,
+.title-text a:hover,
+.title-text a:active {
+    color: #b4ff00;
+}
+
+.subtitle-text a:link,
+.subtitle-text a:visited,
+.subtitle-text a:hover,
+.subtitle-text a:active {
+    color: #b4ff00;
+}
+
 .subtitle-text {
     font-size: 16.5pt;
     color: #b4ff00;
