@@ -1,6 +1,7 @@
 body {
     background-color: #323232;
     font-size: 12pt;
+    color: #ffffff;
 }
 
 .title-text {
@@ -33,6 +34,7 @@ body {
 }
 
 footer {
+    margin-top: 10px;
     background-color: #888888;
     padding: 10px;
 }
@@ -56,4 +58,19 @@ footer {
 .social-icons {
     float: right;
     color: #ffffff;
+}
+
+#map-canvas {
+    width: 720px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.btn-room {
+    display: block;
+    margin-top: 10px;
 }
