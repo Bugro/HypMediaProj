@@ -80,6 +80,7 @@ footer {
 .center-img {
     margin: 0 auto;
     display: block;
+    padding: 10px;
 }
 
 .btn-room {
@@ -90,4 +91,9 @@ footer {
 .gray-border {
     border: 1px solid #888888;
     padding: 5px;
+}
+
+.img-equip {
+    width: 500px;
+    height: 500px;
 }
