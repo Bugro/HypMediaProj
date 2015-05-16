@@ -53,6 +53,12 @@ footer {
     margin-bottom: 60px;
 }
 
+.course-img {
+    float: left;
+    width: 260;
+    height: 200px;
+}
+
 .footer-link {
     padding-left: 100px;
     color: #ffffff;
@@ -83,6 +89,10 @@ footer {
     padding: 10px;
 }
 
+.float-text {
+    float: right;
+}
+
 .btn-room {
     display: block;
     margin-top: 10px;
@@ -96,4 +106,8 @@ footer {
 .img-equip {
     width: 500px;
     height: 500px;
+}
+
+.bottom-padding {
+    padding-bottom: 10px;
 }
