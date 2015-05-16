@@ -7,7 +7,7 @@
   <?php include($_SERVER['DOCUMENT_ROOT'].'/header.html'); ?>
   <div class="content">
     <div class="container">
-      <h2 class="center-text">Our Equipment</h2>
+      <h1 class="center-text">Our Equipment</h1>
       <h3 class="center-text">Endurance B3R Recumbent Bike</h3><img class="center-img img-rounded img-equip" src="/assets/equip-3.jpg">
       <p>The Endurance ® B3R Recumbent Bike gives you a cardiovascular workout without straining your body. It features 16 levels of resistance so you can find a workout that fits your needs. Self-generating electronics provide feedback during your workout. Contact heart rate and advanced heart rate control lets you monitor your workout. Dura-Firm ™ seat padding makes your ride comfortable and provides lumbar support.</p>
       <div class="row">

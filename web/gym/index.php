@@ -8,7 +8,7 @@
   <?php include($_SERVER['DOCUMENT_ROOT'].'/header.html'); ?>
   <div class="content">
     <div class="container">
-      <h2 class="center-text">Welcome to the Gym</h2>
+      <h1 class="center-text">Welcome to the Gym</h1>
 <img class="center-img img-rounded" src="/assets/gym.jpg"> <a href="/history/" class="btn btn-primary btn-room" role="button">History</a>
       <div class="row">
         <div class="col-md-4">

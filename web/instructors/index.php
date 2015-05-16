@@ -8,7 +8,7 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/header.html'); ?>
   <div class="content">
     <div class="container">
-      <h2 class="center-text">All Instructors</h2>
+      <h1 class="center-text">All Instructors</h1>
       <div class="row">
         <div class="col-md-4"><img class="instruc-img img-rounded" src="/assets/instructor.jpg"></div>
         <div class="col-md-4"><img class="instruc-img img-rounded" src="/assets/instructor.jpg"></div>

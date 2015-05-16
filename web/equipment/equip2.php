@@ -7,7 +7,7 @@
   <?php include($_SERVER['DOCUMENT_ROOT'].'/header.html'); ?>
   <div class="content">
     <div class="container">
-      <h2 class="center-text">Our Equipment</h2>
+      <h1 class="center-text">Our Equipment</h1>
       <h3 class="center-text">SOLE TT8 Light Commercial Treadmill</h3><img class="center-img img-rounded img-equip" src="/assets/equip-2.jpg">
       <p>Run with confidence on the quiet yet sturdy SOLE TT8 Treadmill that offers a 22" wide running surface and a deck built to hold up to 425 lbs. With a 4.0 continuous horsepower (CHP) motor, runners will get powerful results and miles ahead of competition. Features include a top speed of 12 mph and incline of 15 percent for training variety, a built-in cooling system for extended usage, and a cushion flex whisper deck for minimal stress on the body.</p>
       <div class="row">
