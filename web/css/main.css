@@ -77,7 +77,17 @@ footer {
     text-align: center;
 }
 
+.center-img {
+    margin: 0 auto;
+    display: block;
+}
+
 .btn-room {
     display: block;
     margin-top: 10px;
+}
+
+.gray-border {
+    border: 1px solid #888888;
+    padding: 5px;
 }
