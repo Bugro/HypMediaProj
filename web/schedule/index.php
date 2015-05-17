@@ -2,26 +2,34 @@
 <html lang="en">
 <head>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/head.html'); ?>
+  <link rel="stylesheet" type="text/css" href="/css/calendar.css">
 </head>
 <body>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/header.html'); ?>
   <div class="content">
     <div class="container">
-      <h1 class="center-text">Schedule</h1>
-      <h3 class="center-text">Monday</h3>
-      <p class="center-text">07:00 - 22:00</p>
-      <h3 class="center-text">Tuesday</h3>
-      <p class="center-text">09:00 - 22:00</p>
-      <h3 class="center-text">Wednesday</h3>
-      <p class="center-text">07:00 - 22:00</p>
-      <h3 class="center-text">Thursday</h3>
-      <p class="center-text">09:00 - 22:00</p>
-      <h3 class="center-text">Friday</h3>
-      <p class="center-text">07:00 - 22:00</p>
-      <h3 class="center-text">Saturday</h3>
-      <p class="center-text">10:00 - 18:00</p>
-      <h3 class="center-text">Sunday</h3>
-      <p class="center-text">10:00 - 13:00</p>
+      <div id="calendar" class="fc-calendar-container"></div>
+      <script type="text/javascript" src="/js/jquery.calendario.js">
+      </script>
+      <script type="text/javascript" src="/js/data.js">
+      </script>
+      <script type="text/javascript">
+                        $(function() {
+
+                                var cal = $( '#calendar' ).calendario( {
+                                                onDayClick : function( $el, $contentEl, dateProperties ) {
+
+                                                        for( var key in dateProperties ) {
+                                                                console.log( key + ' = ' + dateProperties[ key ] );
+                                                        }
+
+                                                },
+                                                caldata : codropsEvents
+                                        } ),
+                                        $month = $( '#custom-month' ).html( cal.getMonthName() ),
+                                        $year = $( '#custom-year' ).html( cal.getYear() );
+                        });
+      </script>
     </div>
   </div><?php include($_SERVER['DOCUMENT_ROOT'].'/footer.html'); ?>
 </body>
