@@ -111,3 +111,66 @@ footer {
 .bottom-padding {
     padding-bottom: 10px;
 }
+
+.btn-primary {
+    background-color: #b4ff00;
+    border-color: #6B9900;
+    color: #000000;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #000000;
+  background-color: #8FCC00;
+  border-color: #6B9900;
+}
+
+.btn-success {
+  color: #000000;
+  background-color: #E0FF99;
+  border-color: #E6FFAD;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.focus,
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  color: #000000;
+  background-color: #9CB26B;
+  border-color: #E6FFAD;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled.focus,
+.btn-success[disabled].focus,
+fieldset[disabled] .btn-success.focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #E0FF99;
+  border-color: #E6FFAD;
+}
+.btn-success .badge {
+  color: #000000;
+  background-color: #E0FF99;
+}
