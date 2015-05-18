@@ -42,7 +42,7 @@
         </div>
         <div class="col-md-4">
           <div class="overlay-img">
-            <a href="/fees/"><img class="body-img img-rounded" src="/assets/6.png">
+            <a href="/register/"><img class="body-img img-rounded" src="/assets/6.png">
             <p class="desc white-links">REGISTER</p></a>
           </div>
         </div>
