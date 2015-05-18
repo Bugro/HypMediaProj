@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'OCRAExtendedRegular';
+    src: url('/fonts/ocr.ttf');
+}
+
 body {
     background-color: #323232;
+    font-family: 'OCRAExtendedRegular';
     font-size: 12pt;
     color: #ffffff;
 }
@@ -128,15 +134,15 @@ footer {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #000000;
-  background-color: #8FCC00;
-  border-color: #6B9900;
+    color: #000000;
+    background-color: #8FCC00;
+    border-color: #6B9900;
 }
 
 .btn-success {
-  color: #000000;
-  background-color: #E0FF99;
-  border-color: #E6FFAD;
+    color: #000000;
+    background-color: #E0FF99;
+    border-color: #E6FFAD;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -144,14 +150,14 @@ footer {
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
-  color: #000000;
-  background-color: #9CB26B;
-  border-color: #E6FFAD;
+    color: #000000;
+    background-color: #9CB26B;
+    border-color: #E6FFAD;
 }
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
-  background-image: none;
+    background-image: none;
 }
 .btn-success.disabled,
 .btn-success[disabled],
@@ -171,10 +177,10 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #E0FF99;
-  border-color: #E6FFAD;
+    background-color: #E0FF99;
+    border-color: #E6FFAD;
 }
 .btn-success .badge {
-  color: #000000;
-  background-color: #E0FF99;
+    color: #000000;
+    background-color: #E0FF99;
 }
