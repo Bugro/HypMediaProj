@@ -184,3 +184,27 @@ fieldset[disabled] .btn-success.active {
     color: #000000;
     background-color: #E0FF99;
 }
+
+.overlay-img {
+    /* force the div to properly contain the floated images: */
+    position:relative;
+    float:left;
+    clear:none;
+    overflow:hidden;
+}
+.overlay-img img {
+    position:relative;
+    vertical-align: text-bottom;
+    z-index:1;
+}
+.overlay-img .desc {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+    display:block;
+    position: absolute;
+    width: 96%;
+    left: 2%;
+    top: 66.5%;
+    z-index:2;
+    text-align:center;
+}
