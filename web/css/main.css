@@ -242,3 +242,7 @@ fieldset[disabled] .btn-success.active {
     z-index: 2;
     text-align:center;
 }
+
+#imgmap {
+    width: 100%;
+}
