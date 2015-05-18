@@ -64,6 +64,13 @@ footer {
     margin-bottom: 60px;
 }
 
+.small-img {
+    width: 250px;
+    height: 175px;
+    border: 6px solid white;
+    margin-bottom: 60px;
+}
+
 .instruc-img {
     width: 300px;
     height: 210px;
@@ -193,6 +200,7 @@ fieldset[disabled] .btn-success.active {
     background-color: #E0FF99;
 }
 
+.small-overlay-img,
 .overlay-img {
     /* force the div to properly contain the floated images: */
     position:relative;
@@ -200,11 +208,13 @@ fieldset[disabled] .btn-success.active {
     clear:none;
     overflow:hidden;
 }
+.small-overlay-img img,
 .overlay-img img {
     position:relative;
     vertical-align: text-bottom;
     z-index:1;
 }
+
 .overlay-img .desc {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.5);
@@ -214,5 +224,19 @@ fieldset[disabled] .btn-success.active {
     left: 2%;
     top: 66.5%;
     z-index:2;
+    text-align:center;
+}
+
+
+
+.small-overlay-img .desc {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+    display:block;
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+    top: 61.4%;
+    z-index: 2;
     text-align:center;
 }
