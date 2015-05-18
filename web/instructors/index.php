@@ -11,20 +11,20 @@
       <div class="row">
         <div class="col-md-4">
           <div class="overlay-img">
-            <a href="/instructors/amy.php"><img class="body-img img-rounded" src="/assets/instruc-amy.jpg">
-            <p class="desc white-links">AMY</p></a>
+            <img class="body-img img-rounded" src="/assets/instruc-amy.jpg">
+            <p class="desc white-links">AMY</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="overlay-img">
-            <a href="/instructors/katie.php"><img class="body-img img-rounded" src="/assets/instruc-katie.jpg">
-            <p class="desc white-links">KATIE</p></a>
+            <img class="body-img img-rounded" src="/assets/instruc-katie.jpg">
+            <p class="desc white-links">KATIE</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="overlay-img">
-            <a href="/equipment/mike.php"><img class="body-img img-rounded" src="/assets/instruc-mike.jpg">
-            <p class="desc white-links">MIKE</p></a>
+            <img class="body-img img-rounded" src="/assets/instruc-mike.jpg">
+            <p class="desc white-links">MIKE</p>
           </div>
         </div>
       </div>
@@ -33,8 +33,8 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
           <div class="overlay-img">
-            <a href="/instructors/adam.php"><img class="body-img img-rounded" src="/assets/instruc-adam.jpg">
-            <p class="desc white-links">ADAM</p></a>
+            <img class="body-img img-rounded" src="/assets/instruc-adam.jpg">
+            <p class="desc white-links">ADAM</p>
           </div>
         </div>
         <div class="col-md-4"></div>
@@ -44,8 +44,8 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
           <div class="overlay-img">
-            <a href="/instructors/mia.php"><img class="body-img img-rounded" src="/assets/instruc-mia.jpg">
-            <p class="desc white-links">MIA</p></a>
+            <img class="body-img img-rounded" src="/assets/instruc-mia.jpg">
+            <p class="desc white-links">MIA</p>
           </div>
         </div>
         <div class="col-md-4"></div>
