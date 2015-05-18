@@ -10,40 +10,48 @@
       <div class="row">
         <div class="col-md-4">
           <div class="overlay-img">
+            <a href="/rooms/">
             <img class="body-img img-rounded" src="/assets/1.jpg">
-            <p class="desc">OUR INSTRUCTORS</p>
+            <p class="desc white-links">OUR INSTRUCTORS</p>
+</a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="overlay-img">
+            <a href="/equipment/">
             <img class="body-img img-rounded" src="/assets/2.jpg">
-            <p class="desc">OUR EQUIPMENT</p>
+            <p class="desc white-links">OUR EQUIPMENT</p>
+</a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="overlay-img">
+            <a href="/rooms/">
             <img class="body-img img-rounded" src="/assets/equipment.jpg">
-            <p class="desc">FITNESS ROOMS</p>
+            <p class="desc white-links">FITNESS ROOMS</p>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
           <div class="overlay-img">
+            <a href="/location/">
             <img class="body-img img-rounded" src="/assets/location.jpg">
-            <p class="desc">LOCATION</p>
+            <p class="desc white-links">LOCATION</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="overlay-img">
+            <a href="/testimonials/">
             <img class="body-img img-rounded" src="/assets/testimonials.jpg">
-            <p class="desc">TESTIMONIALS</p>
+            <p class="desc white-links">TESTIMONIALS</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="overlay-img">
+            <a href="/fees/">
             <img class="body-img img-rounded" src="/assets/6.png">
-            <p class="desc">REGISTER</p>
+            <p class="desc white-links">REGISTER</p>
           </div>
         </div>
       </div>

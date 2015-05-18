@@ -29,6 +29,14 @@ body {
     color: #b4ff00;
 }
 
+.white-links,
+.white-links a:link,
+.white-links a:visited,
+.white-links a:hover,
+.white-links a:active {
+    color: #ffffff;
+}
+
 .subtitle-text {
     font-size: 16.5pt;
     color: #b4ff00;
