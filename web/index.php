@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="overlay-img">
-            <a href="/rooms/"><img class="body-img img-rounded" src="/assets/1.jpg">
+            <a href="/instructors/"><img class="body-img img-rounded" src="/assets/1.jpg">
             <p class="desc white-links">OUR INSTRUCTORS</p></a>
           </div>
         </div>
