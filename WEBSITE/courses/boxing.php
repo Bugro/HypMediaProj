@@ -7,10 +7,10 @@
   <?php include($_SERVER['DOCUMENT_ROOT'].'/header.html'); ?>
   <div class="content">
     <div class="container">
-     <h3 class="center-text">Boxing</h3>
+     <h3 class="center-text" id="courseTitle">Boxing</h3>
       <div class="row">
         <div class="col-md-3"><img class="center-img img-rounded img-equip" src="/assets/course-boxing.jpg"></div>
-        <div class="col-md-9">
+        <div class="col-md-9" id="courseDescription">
           <p>Boxing is a martial art and combat sport in which two people engage in a contest of strength, speed, reflexes, endurance and will, by throwing punches at each other, usually with gloved hands. Historically, the goals have been to weaken and knock down the opponent.</p>
         </div>
       </div>
