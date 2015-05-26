@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "phpmyadmin", "AsZqnprNuQW4INZeaA2kEp0BWi0i1Jwe", "biggym"); //connexion to the database
+$mysqli = new mysqli(getenv("mysqli_default_host"), getenv("mysqli_default_user"),getenv("mysqli_default_pw"),getenv("mysqli_default_table"));
 
 if (mysqli_connect_errno()) { //verify connection
     echo "Error to connect to DBMS: ".mysqli_connect_error(); //notify error

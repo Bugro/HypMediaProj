@@ -1,13 +1,14 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "biggym"); //connexion to the database
+$mysqli = new mysqli(getenv("mysqli_default_host"), getenv("mysqli_default_user"),getenv("mysqli_default_pw"),getenv("mysqli_default_table"));
+
 
 if (mysqli_connect_errno()) { //verify connection
     echo "Error to connect to DBMS: ".mysqli_connect_error(); //notify error
-    exit(); //do nothing else 
+    exit(); //do nothing else
 }
 else {
     //echo "Successful connection"; // connection ok
-    
+
     # extract results mysqli_result::fetch_array
     $query = " SELECT * FROM course ";
     //query execution
