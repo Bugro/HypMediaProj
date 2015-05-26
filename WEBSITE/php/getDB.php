@@ -1,16 +1,16 @@
 <?php
+//$mysqli = new mysqli("localhost", "root", "", "biggym"); //connexion to the database
 $mysqli = new mysqli(getenv("mysqli_default_host"), getenv("mysqli_default_user"),getenv("mysqli_default_pw"),getenv("mysqli_default_table"));
 
 if (mysqli_connect_errno()) { //verify connection
     echo "Error to connect to DBMS: ".mysqli_connect_error(); //notify error
-    exit(); //do nothing else
+    exit(); //do nothing else 
 }
 else {
     //echo "Successful connection"; // connection ok
-
-    $table = $_POST['table'];
+    
     # extract results mysqli_result::fetch_array
-    $query = " SELECT * FROM $table ";
+    $query = " SELECT * FROM course ORDER BY title";
     //query execution
     $result = $mysqli->query($query);
     //if there are data available
@@ -18,7 +18,7 @@ else {
     {
         $myArray = array();//create an array
         while($row = $result->fetch_array(MYSQL_ASSOC)) {
-            $myArray[] = $row;
+            $myArray[] = array_map('utf8_encode', $row);
         }
         echo json_encode($myArray);
     }
