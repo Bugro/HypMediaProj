@@ -5,3 +5,4 @@
 - Room page
 - Room map
 - Schedule: make a table with querys
+- History page
