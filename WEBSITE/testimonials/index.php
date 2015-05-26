@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/head.html'); ?>
+    <script type="text/javascript" src="../js/getTestimonial.js"></script>
   <title></title>
 </head>
 <body>
@@ -11,7 +12,7 @@
 
       <h2 class="center-text">Our valuable members thoughts about us:</h2>
 
-      <div class="row">
+      <div class="row" id="testimonialList">
         <div class="col-md-6">
           <p class="gray-border">"I have never looked forward to going to a gym until I joined BIG - and my enthusiasm is beginning to show in my physique!" –Barbara Yales</p>
           <p class="gray-border">"It’s encouraging to see people at all fitness levels working out under the same roof. Plus, BIG is in my backyard, there is no excuse not to go!"  -Chris Hummel</p>
