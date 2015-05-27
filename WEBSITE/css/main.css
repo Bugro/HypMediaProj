@@ -37,6 +37,14 @@ body {
     color: #ffffff;
 }
 
+.black-links,
+.black-links a:link,
+.black-links a:visited,
+.black-links a:hover,
+.black-links a:active {
+    color: #000000;
+}
+
 .subtitle-text {
     font-size: 16.5pt;
     color: #b4ff00;
@@ -198,6 +206,12 @@ fieldset[disabled] .btn-success.active {
 .btn-success .badge {
     color: #000000;
     background-color: #E0FF99;
+}
+
+.title{
+    background-image: url(../assets/gymlogocool2.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .small-overlay-img,

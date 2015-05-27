@@ -5,14 +5,16 @@
 </head>
 <body>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/header.html'); ?>
+    <script type="text/javascript" src="/js/getRoom.js"></script>
   <div class="content">
     <div class="container">
-	<div class="center-text"><h1>Interactive map</h1></div>
-        <div id="mapOfTheGym"><img id="imgmap" class="img-rounded" src="/assets/gymplan.jpg"></div>
-        <div class="selectedRoom">
-            <div class="center-text"><h1>Selected Room</h1></div>
-            <div class="descriptionOfRoom">Here goes the description of the room and all the information on its location, what people are doing inside...</div>
+        <div class="center-text"><h1>Interactive map</h1></div>
+        <div class="selectedRoom col-md-3">
+            <div class="center-text" id="roomList">
+                
+            </div>
         </div>
+        <div class="col-md-9" id="mapOfTheGym"><img id="imgmap" class="img-rounded" src="/assets/gymplan/gymplan.jpg"></div>
     </div>
   </div><?php include($_SERVER['DOCUMENT_ROOT'].'/footer.html'); ?>
 </body>
