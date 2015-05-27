@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/head.html'); ?>
-    <script type="text/javascript" src="../js/getTestimonial.js"></script>
+    <script type="text/javascript" src="/js/getTestimonial.js"></script>
   <title></title>
 </head>
 <body>

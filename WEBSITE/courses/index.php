@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/head.html'); ?>
-    <script type="text/javascript" src="../js/getCourse.js"></script>
+    <script type="text/javascript" src="/js/getCourse.js"></script>
 </head>
 <body>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/header.html'); ?>
