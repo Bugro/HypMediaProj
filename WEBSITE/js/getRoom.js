@@ -16,7 +16,7 @@ $( document ).ready(function() {
 
 function displayDescription(event) {
     $(".contentDisplayed").html("");
-    elmt = "<div class='contentDisplayed'><h3 class='center-text' id='roomTitle'>"+event.data.title+"</h3><div class='row'><div class='small-overlay-img'><img class='col-md-12 img-rounded' src='/assets/"+event.data.title+".jpg'></div><div class='col-md-12' id='roomDescription'><p class='center-text'>"+event.data.description+"</p></div></div></div>";
-    $(this).find(".roomDisplayDesc").html(elmt);
+    elmt = "<div class='contentDisplayed'><h3 class='center-text' id='roomTitle'>"+event.data.title+"</h3><div class='row'><div class='small-overlay-img img-rounded' style='width: 100%; height: 200px'><img class='img-rounded' src='/assets/"+event.data.title+".jpg'></div><div class='col-md-12' id='roomDescription'><p class='center-text'>"+event.data.description+"</p></div></div></div>";
+    $(this).find(".roomDisplayDesc").append(elmt);
     $("#mapOfTheGym").html("<img id='imgmap' class='img-rounded' src='/assets/gymplan/gymplan"+event.data.title.split(' ')[0]+".jpg'>");
 }
