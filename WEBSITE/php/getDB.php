@@ -7,15 +7,20 @@ if (mysqli_connect_errno()) {
     exit();
 }
 else {
+    $table_names = array("course","equipment","instructor","room","testimony");
     $table = $_POST['table'];
-    $query = " SELECT * FROM $table";
-    $result = $mysqli->query($query);
-    if ($result->num_rows > 0) {
-        $myArray = array();
-        while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-            $myArray[] = array_map('utf8_encode', $row);
+    if ( in_array($table, $table_names, TRUE)) {
+        $query = " SELECT * FROM $table";
+        $result = $mysqli->query($query);
+        if ($result->num_rows > 0) {
+            $myArray = array();
+            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+                $myArray[] = array_map('utf8_encode', $row);
+            }
+            echo json_encode($myArray);
         }
-        echo json_encode($myArray);
+    } else {
+        echo "Invalid POST data";
     }
 
     $result->close();
