@@ -262,8 +262,14 @@ fieldset[disabled] .btn-success.active {
     width: 100%;
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 768px) {
     .title {
         display: none;
     }
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
 }
