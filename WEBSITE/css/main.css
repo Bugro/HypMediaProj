@@ -261,3 +261,9 @@ fieldset[disabled] .btn-success.active {
 #imgmap {
     width: 100%;
 }
+
+@media only screen and (max-width: 500px) {
+    .title {
+        display: none;
+    }
+}
