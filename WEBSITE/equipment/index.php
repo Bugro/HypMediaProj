@@ -5,10 +5,10 @@
 </head>
 <body>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/header.html'); ?>
-    <script type="text/javascript" src="/js/getEquipment.js"></script>
+    <script type="text/javascript" src="/js/getEquipement.js"></script>
   <div class="content">
-    <div class="container" id="equipmentList">
-
+    <div class="container" id="equipementList">
+      
       </div>
     </div><?php include($_SERVER['DOCUMENT_ROOT'].'/footer.html'); ?>
   </div>

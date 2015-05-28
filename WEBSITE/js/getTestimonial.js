@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    getDBTable("testimony", function(testimonial) {
+    getDBTable("testimony", 2, function(testimonial) {
         if (typeof testimonial == 'string' || testimonial instanceof String) {
             console.log("Error while getting database data");
         } else {

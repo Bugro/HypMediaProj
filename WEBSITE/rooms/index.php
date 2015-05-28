@@ -10,7 +10,7 @@
     <div class="container">
         <div class="center-text"><h1>Interactive map</h1></div>
         <div class="selectedRoom col-md-3">
-            <div class="center-text" id="roomList">
+            <div class="center-text col-md-12" id="roomList">
                 
             </div>
         </div>
