@@ -13,6 +13,21 @@ function displayDescription(event) {
     $("#courseList").html(elmt);
 }
 
+function displayCourseByAlpha(){
+    $("#courseList").html("");
+    getDBTable("course", 2, function(course) {
+        if (typeof course == 'string' || course instanceof String) {
+            console.log("Error while getting database data");
+        } else {
+            var courseList="";
+            for(var i=0;i<course.length;i++){
+                $("#courseList").append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
+                $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
+            }
+        }
+    });
+}
+
 function displayCourseByLevel(){
     $("#courseList").html("");
     getDBTable("course", 5, function(course) {
