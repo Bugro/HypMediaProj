@@ -41,48 +41,35 @@ function displayCourseByLevel(){
     });
 }
 
-function displayCourseByAlpha(){
+function displayCourseByCateg(){
     $("#courseList").html("");
-    getDBTable("course", 2, function(course) {
-        if (typeof course == 'string' || course instanceof String) {
+    
+     categoryTable = [];
+    
+    getDBTable("category", 2, function(category) {
+        if (typeof category == 'string' || category instanceof String) {
             console.log("Error while getting database data");
         } else {
-            var courseList="";
-            for(var i=0;i<course.length;i++){
-                $("#courseList").append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
+            for(var i=0;i<category.length;i++){
+                categoryTable[i] = category[i].title;
             }
         }
     });
-}
-
-function displayCourseByCateg(){
-    $("#courseList").html("");
+    
     getDBTable("course", 5, function(course) {
         if (typeof course == 'string' || course instanceof String) {
             console.log("Error while getting database data");
         } else {
             var courseList="";
-            $("#courseList").append("<div class='col-md-12' id='Dance'><h3 class='center-text'>Dance</h3></div>");
-            $("#courseList").append("<div class='col-md-12' id='Combat'><h3 class='center-text'>Combat</h3></div>");
-            $("#courseList").append("<div class='col-md-12' id='Bodybuilding'><h3 class='center-text'>Bodybuilding</h3></div>");
-            $("#courseList").append("<div class='col-md-12' id='Cardio'><h3 class='center-text'>Cardio</h3></div>");
+            for(var j=0;j<categoryTable.length;j++){
+                $("#courseList").append("<div class='col-md-12' id='"+categoryTable[j]+"'><h3 class='center-text'>"+categoryTable[j]+"</h3></div>");
+            }
             for(var i=0;i<course.length;i++){
-                if((course[i].category.split(' ')[0] == "Dance")||(course[i].category.split(' ')[1] == "Dance")){
-                    $("#Dance").append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                    $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
-                }
-                if((course[i].category.split(' ')[0] == "Combat")||(course[i].category.split(' ')[0] == "Combat")){
-                    $("#Combat").append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                    $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
-                }
-                if((course[i].category.split(' ')[0] == "Bodybuilding")||(course[i].category.split(' ')[0] == "Bodybuilding")){
-                    $("#Bodybuilding").append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                    $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
-                }
-                if((course[i].category.split(' ')[0] == "Cardio")||(course[i].category.split(' ')[0] == "Cardio")){
-                    $("#Cardio").append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                    $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
+                for(var j=0;j<categoryTable.length;j++){
+                    if((course[i].category.split(' ')[0] == categoryTable[j])||(course[i].category.split(' ')[1] == categoryTable[j])){
+                        $("#"+categoryTable[j]).append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
+                        $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
+                    }
                 }
             }
         }
