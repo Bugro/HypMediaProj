@@ -7,7 +7,7 @@ if (mysqli_connect_errno()) {
     exit();
 }
 else {
-    $table_names = array("course","equipment","instructor","room","testimony");
+    $table_names = array("course","equipment","instructor","room","testimony", "category");
     if (isset($_POST['table']) && in_array($_POST['table'], $table_names, TRUE)) {
         $table = $_POST['table'];
     } else {
