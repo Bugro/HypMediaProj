@@ -1,9 +1,9 @@
 $( document ).ready(function() {
-    
+
     $("#allCourseAlpha").on("click", displayCourseByAlpha);
     $("#allCourseLevel").on("click", displayCourseByLevel);
     $("#allCourseCateg").on("click", displayCourseByCateg);
-    
+
     $(document).ready(displayCourseByAlpha());
 });
 
@@ -58,9 +58,9 @@ function displayCourseByLevel(){
 
 function displayCourseByCateg(){
     $("#courseList").html("");
-    
-     categoryTable = [];
-    
+
+    categoryTable = [];
+
     getDBTable("category", 2, function(category) {
         if (typeof category == 'string' || category instanceof String) {
             console.log("Error while getting database data");
@@ -68,25 +68,24 @@ function displayCourseByCateg(){
             for(var i=0;i<category.length;i++){
                 categoryTable[i] = category[i].title;
             }
-        }
-    });
-    
-    getDBTable("course", 5, function(course) {
-        if (typeof course == 'string' || course instanceof String) {
-            console.log("Error while getting database data");
-        } else {
-            var courseList="";
-            for(var j=0;j<categoryTable.length;j++){
-                $("#courseList").append("<div class='col-md-12' id='"+categoryTable[j]+"'><h3 class='center-text'>"+categoryTable[j]+"</h3></div>");
-            }
-            for(var i=0;i<course.length;i++){
-                for(var j=0;j<categoryTable.length;j++){
-                    if((course[i].category.split(' ')[0] == categoryTable[j])||(course[i].category.split(' ')[1] == categoryTable[j])){
-                        $("#"+categoryTable[j]).append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                        $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
+            getDBTable("course", 5, function(course) {
+                if (typeof course == 'string' || course instanceof String) {
+                    console.log("Error while getting database data");
+                } else {
+                    var courseList="";
+                    for (var j=0;j<categoryTable.length;j++) {
+                        $("#courseList").append("<div class='col-md-12' id='"+categoryTable[j]+"'><h3 class='center-text'>"+categoryTable[j]+"</h3></div>");
+                    }
+                    for (var i=0;i<course.length;i++) {
+                        for(var j=0;j<categoryTable.length;j++){
+                            if((course[i].category.split(' ')[0] == categoryTable[j])||(course[i].category.split(' ')[1] == categoryTable[j])){
+                                $("#"+categoryTable[j]).append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
+                                $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
+                            }
+                        }
                     }
                 }
-            }
+            });
         }
     });
 }
