@@ -35,9 +35,9 @@ function displayCourseByLevel(){
             console.log("Error while getting database data");
         } else {
             var courseList="";
-            $("#courseList").append("<div class='col-md-12' id='Easy'><h3 class='center-text'>Easy</h3></div>");
-            $("#courseList").append("<div class='col-md-12' id='Medium'><h3 class='center-text'>Medium</h3></div>");
-            $("#courseList").append("<div class='col-md-12' id='Hard'><h3 class='center-text'>Hard</h3></div>");
+            $("#courseList").append("<div class='col-xs-12' id='Easy'><h3 class='center-text'>Easy</h3></div>");
+            $("#courseList").append("<div class='col-xs-12' id='Medium'><h3 class='center-text'>Medium</h3></div>");
+            $("#courseList").append("<div class='col-xs-12' id='Hard'><h3 class='center-text'>Hard</h3></div>");
             for(var i=0;i<course.length;i++){
                 if(course[i].level == "Easy"){
                     $("#Easy").append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
@@ -74,13 +74,17 @@ function displayCourseByCateg(){
                 } else {
                     var courseList="";
                     for (var j=0;j<categoryTable.length;j++) {
-                        $("#courseList").append("<div class='col-md-12' id='"+categoryTable[j]+"'><h3 class='center-text'>"+categoryTable[j]+"</h3></div>");
+                        $("#courseList").append("<h3 class='center-text'>"+categoryTable[j]+"</h3><div class='col-xs-12' id='"+categoryTable[j]+"'></div>");
                     }
-                    for (var i=0;i<course.length;i++) {
                         for(var j=0;j<categoryTable.length;j++){
-                            if((course[i].category.split(' ')[0] == categoryTable[j])||(course[i].category.split(' ')[1] == categoryTable[j])){
-                                $("#"+categoryTable[j]).append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                                $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
+                    for (var i=0;i<course.length;i++) {
+                            if(course[i].category.split(' ')[0] == categoryTable[j]){
+                                $("#"+course[i].category.split(' ')[0]).append("<div class='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
+                                $("."+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
+                            }
+                            if(course[i].category.split(' ')[1] == categoryTable[j]){
+                                $("#"+course[i].category.split(' ')[1]).append("<div class='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
+                                $("."+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
                             }
                         }
                     }
