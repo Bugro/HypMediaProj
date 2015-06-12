@@ -16,19 +16,8 @@ $( document ).ready(function() {
 
 
 function displayDescription(event) {
-    $("#instructorList").html("");
-    allSpecialities = "";
-    specialityList = event.data.speciality.split(", ");
-    console.log(specialityList);
-    for(var i=0;i<specialityList.length-1;i++){
-        allSpecialities += "<span id='"+specialityList[i].split(' ')[0]+"'>"+specialityList[i]+", "+"</span>";
-    }
-    allSpecialities += "<span id='"+specialityList[specialityList.length-1].split(' ')[0]+"'>"+specialityList[specialityList.length-1]+"</span>";
-    elmt = "<h3 class='center-text well black-links' id='instructorTitle'>"+event.data.title+"</h3><div class='row'><div class='col-md-3'><div class='small-overlay-img'><img class='img-equip img-rounded' src='/assets/instruc-"+event.data.title+".jpg'></div></div><div class='col-md-9' id='instructorDescription'><p>"+event.data.description+"</p><p class='well black-links'>Speciality: "+allSpecialities+"</p></div></div><a href='/instructors/' class='btn btn-primary btn-room' role='button'>Back</a>";
-    $("#instructorList").append(elmt);
-    for(var i=0;i<specialityList.length;i++){
-        $("#"+specialityList[i].split(' ')[0]+"").on("click", {title: specialityList[i]}, displayCourse);
-    }
+    instructorClicked = event.data.title;
+    window.location.href = "../instructors/oneInstructor.php?"+instructorClicked;
 }
 
 function displayCourse(event) {
