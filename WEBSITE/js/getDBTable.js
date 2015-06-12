@@ -4,7 +4,7 @@ function getDBTable(dbTableName, columnToOrder, callback) {
             method: "POST",
             //dataType: "json",
             crossDomain: true,
-            url: "/php/getDB.php",
+            url: "https://hyper.arguggi.co.uk/php/getDB.php",
             data: {table: dbTableName, order: columnToOrder},
             success: function(response) {
                 callback(JSON.parse(response));
