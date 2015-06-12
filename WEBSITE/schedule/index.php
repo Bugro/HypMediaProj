@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/head.html'); ?>
-  <link rel="stylesheet" type="text/css" href="/css/calendar.css">
+  <link rel="stylesheet" type="text/css" href="../css/calendar.css">
 </head>
 <body>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/header.html'); ?>
@@ -19,9 +19,9 @@
         </div>
       </div>
       <div id="calendar" class="fc-calendar-container"></div>
-      <script type="text/javascript" src="/js/jquery.calendario.js">
+      <script type="text/javascript" src="../js/jquery.calendario.js">
       </script>
-      <script type="text/javascript" src="/js/data.js">
+      <script type="text/javascript" src="../js/data.js">
       </script>
       <script type="text/javascript">
                         $(function() {

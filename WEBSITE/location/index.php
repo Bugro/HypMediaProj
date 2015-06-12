@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/head.html'); ?>
-  <script src="/js/maps.js">
+  <script src="../js/maps.js">
   </script>
   <script>
       function initialize() {
@@ -32,7 +32,7 @@
           <p class="center-text">Via Giuseppe Balzaretti, 28, 20133 Milan</p>
         </div>
       </div>
-      <div id="map-canvas"></div><a href="/rooms/" class="btn btn-primary btn-room" role="button">Looking for a room?</a>
+      <div id="map-canvas"></div><a href="../rooms/" class="btn btn-primary btn-room" role="button">Looking for a room?</a>
     </div><?php include($_SERVER['DOCUMENT_ROOT'].'/footer.html'); ?>
   </div>
 </body>
