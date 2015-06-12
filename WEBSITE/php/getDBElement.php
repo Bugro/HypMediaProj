@@ -1,6 +1,6 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "biggym");
-//$mysqli = new mysqli(getenv("mysqli_default_host"), getenv("mysqli_default_user"),getenv("mysqli_default_pw"),getenv("mysqli_default_table"));
+//$mysqli = new mysqli("localhost", "root", "", "biggym");
+$mysqli = new mysqli(getenv("mysqli_default_host"), getenv("mysqli_default_user"),getenv("mysqli_default_pw"),getenv("mysqli_default_table"));
 
 if (mysqli_connect_errno()) {
     echo "Error connecting to DBMS: ".mysqli_connect_error();
@@ -16,7 +16,7 @@ else {
     }
     $title = (string) $_POST['title'];
     $column = (string) $_POST['column'];
-    
+
     $query = " SELECT * FROM $table WHERE $column = '$title'";
     $result = $mysqli->query($query);
     if ($result->num_rows > 0) {
