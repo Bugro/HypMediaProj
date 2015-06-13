@@ -13,12 +13,12 @@ $( document ).ready(function() {
      if (typeof course == 'string' || course instanceof String) {
             console.log("Error while getting database data");
         } else {
-            
+
             $("#courseTitle").append(course[0].title);
             $("#courseImage").append("<img class='img-equip img-rounded' src='/assets/"+course[0].title+".jpg'>");
             $("#courseDescription").append(course[0].description);
-            
-            
+
+
             getDBTable("instructor", 2, function(instructor) {
              if (typeof instructor == 'string' || instructor instanceof String) {
                     console.log("Error while getting database data");
@@ -29,15 +29,15 @@ $( document ).ready(function() {
                             if(instructor[i].speciality.split(', ')[k] == course[0].title){
                                 console.log(instructor[i].name);
                                 allInstru[i] = instructor[i].name;
-                                instruList += "<div class='col-sm-4'><a href='../instructors/oneInstructor.php?"+instructor[i].name+"'><img class='small-img img-rounded' src='/assets/instruc-"+instructor[i].name+".jpg'></a></div>";
+                                instruList += "<div class='col-sm-4'><a href='../instructors/oneInstructor.html?"+instructor[i].name+"'><img class='small-img img-rounded' src='/assets/instruc-"+instructor[i].name+".jpg'></a></div>";
                             }
                         }
                     }
                 }
                 $("#listOfInstructorsForThisCourse").append(instruList);
             });
-            
-                    
+
+
         }
     });
 

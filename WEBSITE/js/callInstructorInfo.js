@@ -19,9 +19,9 @@ $( document ).ready(function() {
             allSpecialities = "";
             specialityList = instructor[0].speciality.split(", ");
             for(var i=0;i<specialityList.length-1;i++){
-                allSpecialities += "<a href='../courses/oneCourse.php?"+specialityList[i]+"' id='"+specialityList[i].split(' ')[0]+"'>"+specialityList[i]+", "+"</a>";
+                allSpecialities += "<a href='../courses/oneCourse.html?"+specialityList[i]+"' id='"+specialityList[i].split(' ')[0]+"'>"+specialityList[i]+", "+"</a>";
             }
-            allSpecialities += "<a href='../courses/oneCourse.php?"+specialityList[i]+"' id='"+specialityList[specialityList.length-1].split(' ')[0]+"'>"+specialityList[specialityList.length-1]+"</a>";
+            allSpecialities += "<a href='../courses/oneCourse.html?"+specialityList[i]+"' id='"+specialityList[specialityList.length-1].split(' ')[0]+"'>"+specialityList[specialityList.length-1]+"</a>";
             $("#listOfCoursesForThisInstructor").append(allSpecialities);
 
         }
