@@ -7,10 +7,11 @@ $( document ).ready(function() {
     $(document).ready(displayCourseByAlpha());
 });
 
-
-function displayDescription(event) {
-    courseClicked = event.data.title;
-    window.location.href = "../courses/oneCourse.php?"+courseClicked;
+function imgHtml(course) {
+    var idTitle = course.title.split(' ')[0];
+    var imgTitle = encodeURI(course.title);
+    var title = course.title;
+    return "<div id='"+idTitle+"'><div class='col-md-4'><div class='small-overlay-img'><a href='../courses/oneCourse.php?"+imgTitle+"'><img class='small-img img-rounded' src='/assets/"+title+".jpg'><p class='desc white-links'>"+title+"</p></img></a></div></div></div>";
 }
 
 function displayCourseByAlpha(){
@@ -21,8 +22,7 @@ function displayCourseByAlpha(){
         } else {
             var courseList="";
             for(var i=0;i<course.length;i++){
-                $("#courseList").append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
+                $("#courseList").append(imgHtml(course[i]));
             }
         }
     });
@@ -39,18 +39,7 @@ function displayCourseByLevel(){
             $("#courseList").append("<div class='col-xs-12' id='Medium'><h3 class='center-text'>Medium</h3></div>");
             $("#courseList").append("<div class='col-xs-12' id='Hard'><h3 class='center-text'>Hard</h3></div>");
             for(var i=0;i<course.length;i++){
-                if(course[i].level == "Easy"){
-                    $("#Easy").append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                    $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
-                }
-                if(course[i].level == "Medium"){
-                    $("#Medium").append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                    $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
-                }
-                if(course[i].level == "Hard"){
-                    $("#Hard").append("<div id='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                    $("#"+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
-                }
+                $("#"+course[i].level).append(imgHtml(course[i]));
             }
         }
     });
@@ -76,15 +65,12 @@ function displayCourseByCateg(){
                     for (var j=0;j<categoryTable.length;j++) {
                         $("#courseList").append("<h3 class='center-text'>"+categoryTable[j]+"</h3><div class='col-xs-12' id='"+categoryTable[j]+"'></div>");
                     }
-                        for(var j=0;j<categoryTable.length;j++){
-                    for (var i=0;i<course.length;i++) {
-                            if(course[i].category.split(' ')[0] == categoryTable[j]){
-                                $("#"+course[i].category.split(' ')[0]).append("<div class='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                                $("."+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
-                            }
-                            if(course[i].category.split(' ')[1] == categoryTable[j]){
-                                $("#"+course[i].category.split(' ')[1]).append("<div class='"+course[i].title.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/"+course[i].title+".jpg'><p class='desc white-links'>"+course[i].title+"</p></div></div></div>");
-                                $("."+course[i].title.split(' ')[0]+"").on("click", {title: course[i].title, description: course[i].description}, displayDescription);
+                    for(var k=0;k < categoryTable.length; k++){
+                        for (var i=0;i<course.length;i++) {
+                            var firstCategory = course[i].category.split(' ')[0];
+                            var secondCategory = course[i].category.split(' ')[1];
+                            if(firstCategory  === categoryTable[k] || secondCategory === categoryTable[k]) {
+                                $("#"+categoryTable[k]).append(imgHtml(course[i]));
                             }
                         }
                     }
