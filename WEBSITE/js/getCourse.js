@@ -67,10 +67,13 @@ function displayCourseByCateg(){
                     }
                     for(var k=0;k < categoryTable.length; k++){
                         for (var i=0;i<course.length;i++) {
+                            var idTitle = course[i].title.split(' ')[0];
+                            var imgTitle = encodeURI(course[i].title);
+                            var title = course[i].title;
                             var firstCategory = course[i].category.split(' ')[0];
                             var secondCategory = course[i].category.split(' ')[1];
                             if(firstCategory  === categoryTable[k] || secondCategory === categoryTable[k]) {
-                                $("#"+categoryTable[k]).append(imgHtml(course[i]));
+                                $("#"+categoryTable[k]).append("<div class='"+idTitle+"'><div class='col-md-4'><div class='small-overlay-img'><a href='../courses/oneCourse.html?"+imgTitle+"'><img class='small-img img-rounded' src='../assets/"+title+".jpg'><p class='desc white-links'>"+title+"</p></img></a></div></div></div>");
                             }
                         }
                     }
