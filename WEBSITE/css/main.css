@@ -260,10 +260,6 @@ fieldset[disabled] .btn-success.active {
     text-align:center;
 }
 
-#imgmap {
-    width: 100%;
-}
-
 @media (max-width: 768px) {
     .title {
         display: none;
