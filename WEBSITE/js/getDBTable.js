@@ -4,7 +4,7 @@ function getDBTable(dbTableName, columnToOrder, callback) {
             method: "POST",
             //dataType: "json",
             crossDomain: true,
-            url: "https://hyper.arguggi.co.uk/php/getDB.php",
+            url: "/php/getDB.php",
             data: {table: dbTableName, order: columnToOrder},
             success: function(response) {
                 callback(JSON.parse(response));
@@ -22,7 +22,7 @@ function getDBElement(dbTableName, nameOfElement, nameOfColumn, callback) {
             method: "POST",
             //dataType: "json",
             crossDomain: true,
-            url: "https://hyper.arguggi.co.uk/php/getDBElement.php",
+            url: "/php/getDBElement.php",
             data: {table: dbTableName, title: nameOfElement, column: nameOfColumn},
             success: function(response) {
                 callback(JSON.parse(response));
