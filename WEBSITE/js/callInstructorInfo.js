@@ -5,7 +5,6 @@ $( document ).ready(function() {
         nameOfTheCurrentInstructorArray[i] = nameOfTheCurrentInstructorArray[i-1].concat(" ", nameOfTheCurrentInstructorArray[i]);
     }
     nameOfTheCurrentInstructor = nameOfTheCurrentInstructorArray[nameOfTheCurrentInstructorArray.length-1];
-    console.log(nameOfTheCurrentInstructor);
 
     allInstru = [];
     instruList = "";
@@ -13,7 +12,7 @@ $( document ).ready(function() {
      if (typeof instructor == 'string' || instructor instanceof String) {
             console.log("Error while getting database data");
         } else {
-            
+
             $("#instructorTitle").append(instructor[0].name);
             $("#instructorImage").append("<img class='img-equip img-rounded' src='/assets/instruc-"+instructor[0].name+".jpg'>");
             $("#instructorDescription").append(instructor[0].description);
@@ -24,13 +23,8 @@ $( document ).ready(function() {
             }
             allSpecialities += "<a href='../courses/oneCourse.php?"+specialityList[i]+"' id='"+specialityList[specialityList.length-1].split(' ')[0]+"'>"+specialityList[specialityList.length-1]+"</a>";
             $("#listOfCoursesForThisInstructor").append(allSpecialities);
-            
+
         }
     });
 
 });
-
-function displayCourseClicked(event) {
-    courseClicked = event.data.title;
-    window.location.href = "../courses/oneCourse.php?"+courseClicked;
-}
