@@ -15,7 +15,7 @@ $( document ).ready(function() {
         } else {
 
             $("#courseTitle").append(course[0].title);
-            $("#courseImage").append("<img class='img-equip img-rounded' src='/assets/"+course[0].title+".jpg'>");
+            $("#courseImage").append("<img class='img-equip img-rounded' src='../assets/"+course[0].title+".jpg'>");
             $("#courseDescription").append(course[0].description);
 
 

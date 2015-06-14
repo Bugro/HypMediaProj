@@ -14,7 +14,7 @@ $( document ).ready(function() {
         } else {
 
             $("#instructorTitle").append(instructor[0].name);
-            $("#instructorImage").append("<img class='img-equip img-rounded' src='/assets/instruc-"+instructor[0].name+".jpg'>");
+            $("#instructorImage").append("<img class='img-equip img-rounded' src='../assets/instruc-"+instructor[0].name+".jpg'>");
             $("#instructorDescription").append(instructor[0].description);
             allSpecialities = "";
             specialityList = instructor[0].speciality.split(", ");

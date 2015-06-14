@@ -21,7 +21,7 @@ function displayCourse(event) {
             var courseList="";
             for(var i=0;i<course.length;i++){
                 if(course[i].title == event.data.title){
-                    elmt = "<h3 class='center-text' id='courseTitle'>"+course[i].title+"</h3><div class='row'><div class='col-md-3'><div class='small-overlay-img'><img class='img-equip img-rounded' src='../assets/"+course[i].title+".jpg'></div></div><div class='col-md-9' id='courseDescription'><p>"+course[i].description+"</p></div></div><a href='../instructors/' class='btn btn-primary btn-room' role='button'>Back</a>";
+                    elmt = "<h3 class='center-text' id='courseTitle'>"+course[i].title+"</h3><div class='row'><div class='col-md-3'><div class='small-overlay-img'><img class='img-equip img-rounded' src='../assets/"+course[i].title+".jpg'></div></div><div class='col-md-9' id='courseDescription'><p>"+course[i].description+"</p></div></div><a href='../instructors/index.html' class='btn btn-primary btn-room' role='button'>Back</a>";
         $("#instructorList").append(elmt);
                 }
             }
