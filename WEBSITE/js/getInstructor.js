@@ -6,19 +6,12 @@ $( document ).ready(function() {
         } else {
             var instructorList="";
             for(var i=0;i<instructor.length;i++){
-                $("#instructorList").append("<div id='"+instructor[i].name.split(' ')[0]+"'><div class='col-md-4'><div class='small-overlay-img'><img class='small-img img-rounded' src='/assets/instruc-"+instructor[i].name+".jpg'><p class='desc white-links'>"+instructor[i].name+"</p></div></div></div>");
-               $("#"+instructor[i].name.split(' ')[0]+"").on("click", {title: instructor[i].name, description: instructor[i].description, speciality: instructor[i].speciality}, displayDescription);
-                console.log(instructor[i].speciality);
+                var name = instructor[i].name.split(' ')[0];
+                $("#instructorList").append("<div id='"+name+"'><div class='col-md-4'><div class='small-overlay-img'><a href='../instructors/oneInstructor.php?"+name+"'><img class='small-img img-rounded' src='/assets/instruc-"+name+".jpg'><p class='desc white-links'>"+name+"</p></img></a></div></div></div>");
             }
         }
     });
 });
-
-
-function displayDescription(event) {
-    instructorClicked = event.data.title;
-    window.location.href = "../instructors/oneInstructor.php?"+instructorClicked;
-}
 
 function displayCourse(event) {
     $("#instructorList").html("");
