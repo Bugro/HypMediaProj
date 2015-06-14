@@ -11,7 +11,7 @@ function imgHtml(course) {
     var idTitle = course.title.split(' ')[0];
     var imgTitle = encodeURI(course.title);
     var title = course.title;
-    return "<div id='"+idTitle+"'><div class='col-md-4'><div class='small-overlay-img'><a href='../courses/oneCourse.php?"+imgTitle+"'><img class='small-img img-rounded' src='../assets/"+title+".jpg'><p class='desc white-links'>"+title+"</p></img></a></div></div></div>";
+    return "<div id='"+idTitle+"'><div class='col-md-4'><div class='small-overlay-img'><a href='../courses/oneCourse.html?"+imgTitle+"'><img class='small-img img-rounded' src='../assets/"+title+".jpg'><p class='desc white-links'>"+title+"</p></img></a></div></div></div>";
 }
 
 function displayCourseByAlpha(){

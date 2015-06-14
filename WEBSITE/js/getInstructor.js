@@ -7,7 +7,7 @@ $( document ).ready(function() {
             var instructorList="";
             for(var i=0;i<instructor.length;i++){
                 var name = instructor[i].name.split(' ')[0];
-                $("#instructorList").append("<div id='"+name+"'><div class='col-md-4'><div class='small-overlay-img'><a href='../instructors/oneInstructor.php?"+name+"'><img class='small-img img-rounded' src='../assets/instruc-"+name+".jpg'><p class='desc white-links'>"+name+"</p></img></a></div></div></div>");
+                $("#instructorList").append("<div id='"+name+"'><div class='col-md-4'><div class='small-overlay-img'><a href='../instructors/oneInstructor.html?"+name+"'><img class='small-img img-rounded' src='../assets/instruc-"+name+".jpg'><p class='desc white-links'>"+name+"</p></img></a></div></div></div>");
             }
         }
     });
