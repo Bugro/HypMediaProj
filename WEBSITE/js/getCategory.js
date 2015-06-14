@@ -6,7 +6,7 @@ $( document ).ready(function() {
 
 function displayDescription(event) {
     courseClicked = event.data.title;
-    window.location.href = "../courses/oneCourse.php?"+courseClicked;
+    window.location.href = "../courses/oneCourse.html?"+courseClicked;
 }
 
 function displayCategory(event) {
