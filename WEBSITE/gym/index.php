@@ -19,7 +19,7 @@
           <a href="/testimonials/" class="btn btn-primary btn-room" role="button">Testimonials</a>
         </div>
         <div class="col-md-3">
-          <a href="/Equipment/" class="btn btn-primary btn-room" role="button">Equipment</a>
+          <a href="/equipment/" class="btn btn-primary btn-room" role="button">Equipment</a>
         </div>
       </div>
     </div><?php include($_SERVER['DOCUMENT_ROOT'].'/footer.html'); ?>
