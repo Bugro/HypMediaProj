@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta name="generator" content="HTML Tidy for HTML5 for Linux version 4.9.26">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <title>Big Gym</title>
-  <link href="../css/bootstrap.css" rel="stylesheet">
-  <script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../js/getDBTable.js"></script>
-    <script type="text/javascript" src="../js/getInstructor.js"></script>
-  <link href="../css/main.css" rel="stylesheet"><!--[if lt IE 9]>
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/jquery-2.1.3.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/getDBTable.js"></script>
+  <link href="/css/main.css" rel="stylesheet"><!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -21,8 +21,8 @@
 <body>
     <div class="title">
     <div class="container">
-      <h1 class="title-text"><a href="../index.html">GYM</a>
-      <h2 class="subtitle-text"><a href="../index.html">Fitness Club</a>
+      <h1 class="title-text"><a href="/">GYM</a>
+      <h2 class="subtitle-text"><a href="/">Fitness Club</a>
     </div>
   </div>
   <nav class="navbar navbar-default">
@@ -67,32 +67,19 @@
         </div>
     </div>
   </nav>
+    <script type="text/javascript" src="/js/getCategory.js"></script>
   <div class="content">
-    <div class="container" id="instructorList">
-
-            <h3 class='center-text' id='instructorTitle'></h3>
-            <div class='row'>
-                <div class='col-md-3'>
-                    <div class='small-overlay-img' id="instructorImage">
-
-                    </div>
-                </div>
-                <div class='col-md-9'>
-                    <p id='instructorDescription'></p>
-                </div>
-            </div>
-            <div class='well black-links col-xs-12'>
-                <div class='center-text'>Courses with this instructor:
-                    <span id="listOfCoursesForThisInstructor"></span>
-                </div>
-            </div>
-            <a href='../instructors/index.html' class='btn btn-primary btn-room col-xs-12' role='button'>Back</a>
-
-    </div>
-  </div>  <footer>
     <div class="container">
-      <a class="footer-link" href="../contacts/index.html">Contact Us</a> <a class="footer-link" href="../support/index.html">Customer Support</a> <a class="footer-link" href="http://www.w3.org/">Powered by Magic</a> <a class="social-icons" href="https://www.facebook.com/"><img src="../assets/Facebook.png" alt="facebook_icon"></a> <a class="social-icons" href="https://twitter.com/"><img src="../assets/Twitter.png" alt="twitter_icon"></a> <a class="social-icons" href="http://instagram.com/"><img src="../assets/Instagram.png" alt="instagram_icon"></a>
+        <div class="col-md-3" id="categoryListButton">
+            <h2 class="center-text">Categories</h2>
+      </div>
+        <h2 class="center-text" id="titleOfThePage">Discover our courses</h2>
+        <div class="container" id="categoryList">Select a category to see which courses are avaible</div>
+    </div>  <footer>
+    <div class="container">
+      <a class="footer-link" href="/contacts/">Contact Us</a> <a class="footer-link" href="/support/">Customer Support</a> <a class="footer-link" href="http://www.w3.org/">Powered by Magic</a> <a class="social-icons" href="https://www.facebook.com/"><img src="/assets/Facebook.png" alt="facebook_icon"></a> <a class="social-icons" href="https://twitter.com/"><img src="/assets/Twitter.png" alt="twitter_icon"></a> <a class="social-icons" href="http://instagram.com/"><img src="/assets/Instagram.png" alt="instagram_icon"></a>
     </div>
   </footer>
+  </div>
 </body>
 </html>
