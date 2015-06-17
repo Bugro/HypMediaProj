@@ -19,7 +19,7 @@
           <p>Boxing is a martial art and combat sport in which two people engage in a contest of strength, speed, reflexes, endurance and will, by throwing punches at each other, usually with gloved hands. Historically, the goals have been to weaken and knock down the opponent.</p>
 <p class="center-text">Target:</p>
 <p class="center-text">Special Features:</p>
-<p class="center-text">Taught by: <a href="../instructors/adam.html">Adam</a></p>
+<p class="center-text">Taught by: <a href="../instructors/index.php">Adam</a></p>
         </div>
       </div>
 <h3 class="center-text">Hatha Yoga</h3>
@@ -29,7 +29,7 @@
           <p>Hatha yoga refers to a set of physical exercises (asanas) designed to align the muscles and bones and open the many energy channels of the body, especially the spine, so that energy can flow freely. Hatha yoga is intended to create a balance of strength and flexibility in the body as well as a balance of effort and surrender in each asana. A powerful tool for self-transformation, Hatha yoga requires that one pay special attention to the breath, which helps calm the fluctuations of the mind. This allows the practitioner to become more present in the unfolding of each moment, resulting in more awareness and relaxation</p>
 <p class="center-text">Target:</p>
 <p class="center-text">Special Features:</p>
-<p class="center-text">Taught by: <a href="../instructors/adam.html">Adam</a></p>
+<p class="center-text">Taught by: <a href="../instructors/index.php">Amy</a></p>
         </div>
       </div>
         </div>
