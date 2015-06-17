@@ -12,7 +12,7 @@
         <div class="col-md-3">
         </div>
         <div class="col-md-6">
-          <a href="/courses/index.php" class="btn btn-primary btn-room" role="button">Gym 1</a>
+          <a href="/schedule/index.php" class="btn btn-primary btn-room" role="button">Gym 1</a>
         </div>
         <div class="col-md-3">
         </div>
@@ -21,7 +21,7 @@
         <div class="col-md-3">
         </div>
         <div class="col-md-6">
-          <a href="/courses/index.php" class="btn btn-primary btn-room" role="button">Gym 2</a>
+          <a href="/schedule/index.php" class="btn btn-primary btn-room" role="button">Gym 2</a>
         </div>
         <div class="col-md-3">
         </div>
