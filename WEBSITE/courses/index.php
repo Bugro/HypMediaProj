@@ -9,49 +9,29 @@
     <div class="container">
       <div class="row bottom-padding">
         <div class="col-md-3">
-          <a href="/courses/" class="btn btn-primary btn-room" role="button">All courses - Alphabetically</a> <a href="/courses/" class="btn btn-success btn-room" role="button">All courses - By Level</a> <a href="/courses/" class="btn btn-success btn-room" role="button">All courses - By Category</a>
+          <a href="/courses/" class="btn btn-primary btn-room" role="button">All courses - Alphabet</a> <a href="/courses/" class="btn btn-success btn-room" role="button">All courses - By Level</a> <a href="/courses/" class="btn btn-success btn-room" role="button">All courses - By Category</a>
         </div>
+<h3 class="center-text">Boxing</h3>
         <div class="col-md-9">
           <div class="row">
-            <div class="col-md-4">
-              <div class="small-overlay-img">
-                <a href="/courses/boxing.php"><img class="small-img img-rounded" src="/assets/course-boxing.jpg">
-                <p class="desc white-links">BOXING</p></a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="small-overlay-img">
-                <a href="/courses/hathayoga.php"><img class="small-img img-rounded" src="/assets/course-hatha.jpg">
-                <p class="desc white-links">HATHA YOGA</p></a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="small-overlay-img">
-                <a href="/courses/kickboxing.php"><img class="small-img img-rounded" src="/assets/course-kickboxing.jpg">
-                <p class="desc white-links">KICKBOXING</p></a>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="small-overlay-img">
-                <a href="/courses/muaythai.php"><img class="small-img img-rounded" src="/assets/course-muaythai.jpg">
-                <p class="desc white-links">MUAY THAI</p></a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="small-overlay-img">
-                <a href="/courses/pilates.php"><img class="small-img img-rounded" src="/assets/course-pilates.jpg">
-                <p class="desc white-links">PILATES</p></a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="small-overlay-img">
-                <a href="/courses/trxtraining.php"><img class="small-img img-rounded" src="/assets/course-trxtraining.jpg">
-                <p class="desc white-links">TRX TRAINING</p></a>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-3"><img class="center-img img-rounded img-equip" src="/assets/course-boxing.jpg"></div>
+        <div class="col-md-9">
+          <p>Boxing is a martial art and combat sport in which two people engage in a contest of strength, speed, reflexes, endurance and will, by throwing punches at each other, usually with gloved hands. Historically, the goals have been to weaken and knock down the opponent.</p>
+<p class="center-text">Target:</p>
+<p class="center-text">Special Features:</p>
+<p class="center-text">Taught by: <a href="../instructors/adam.html">Adam</a></p>
+        </div>
+      </div>
+<h3 class="center-text">Hatha Yoga</h3>
+      <div class="row">
+        <div class="col-md-3"><img class="center-img img-rounded img-equip" src="/assets/course-hatha.jpg"></div>
+        <div class="col-md-9">
+          <p>Hatha yoga refers to a set of physical exercises (asanas) designed to align the muscles and bones and open the many energy channels of the body, especially the spine, so that energy can flow freely. Hatha yoga is intended to create a balance of strength and flexibility in the body as well as a balance of effort and surrender in each asana. A powerful tool for self-transformation, Hatha yoga requires that one pay special attention to the breath, which helps calm the fluctuations of the mind. This allows the practitioner to become more present in the unfolding of each moment, resulting in more awareness and relaxation</p>
+<p class="center-text">Target:</p>
+<p class="center-text">Special Features:</p>
+<p class="center-text">Taught by: <a href="../instructors/adam.html">Adam</a></p>
+        </div>
+      </div>
         </div>
       </div>
     </div><?php include($_SERVER['DOCUMENT_ROOT'].'/footer.html'); ?>
