@@ -10,7 +10,7 @@
     <div class="container">
       <div class="row bottom-padding">
         <div class="col-md-3">
-          <a href="/courses/" class="btn btn-primary btn-room" role="button">All instructors</a> <a href="/courses/" class="btn btn-success btn-room" role="button">Instructor of the month</a>
+          <a href="./" class="btn btn-primary btn-room" role="button">All instructors</a> <a href="./" class="btn btn-success btn-room" role="button">Instructor of the month</a>
         </div>
         <div class="col-md-9">
         <h3 class="center-text">Adam</h3>
