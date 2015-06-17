@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row bottom-padding">
         <div class="col-md-3">
-          <a href="/courses/" class="btn btn-primary btn-room" role="button">All courses - Alphabet</a> <a href="/courses/" class="btn btn-success btn-room" role="button">All courses - By Level</a> <a href="/courses/" class="btn btn-success btn-room" role="button">All courses - By Category</a>
+          <a href="/courses/" class="btn btn-primary btn-room" role="button">All courses - Alphabet</a> <a href="/courses/" class="btn btn-success btn-room" role="button">All courses - By Level</a> <a href="/courses/category.php" class="btn btn-success btn-room" role="button">All courses - By Category</a>
         </div>
 <h3 class="center-text">Boxing</h3>
         <div class="col-md-9">
