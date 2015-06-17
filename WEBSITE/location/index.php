@@ -32,7 +32,7 @@
           <p class="center-text">Via Giuseppe Balzaretti, 28, 20133 Milan</p>
         </div>
       </div>
-      <div id="map-canvas"></div><a href="/rooms/index.php" class="btn btn-primary btn-room" role="button">Gym Rooms</a>
+      <div id="map-canvas"></div><a href="/rooms/" class="btn btn-primary btn-room" role="button">Looking for a room?</a>
     </div><?php include($_SERVER['DOCUMENT_ROOT'].'/footer.html'); ?>
   </div>
 </body>
